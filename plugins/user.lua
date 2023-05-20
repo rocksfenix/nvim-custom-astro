@@ -9,4 +9,30 @@ return {
   --     require("lsp_signature").setup()
   --   end,
   -- },
+  --
+  --
+  -- Styled components syntax
+  -- TODO: Configure correctly
+  {
+    "styled-components/vim-styled-components",
+    dependencies = {},
+    lazy = false,
+    -- config = function()
+    --   require("vim-styled-components").setup {
+    --
+    --   }
+    -- end,
+  },
+
+  -- TODOs
+  {
+    "folke/todo-comments.nvim",
+    dependencies = { "nvim-lua/plenary.nvim" },
+    opts = {},
+    event = "User AstroFile",
+    cmd = { "TodoQuickFix" },
+    keys = {
+      { "<leader>T", "<cmd>TodoTelescope<cr>" },
+    }
+  }
 }
