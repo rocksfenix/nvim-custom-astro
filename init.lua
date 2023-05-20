@@ -18,7 +18,13 @@ return {
   },
 
   -- Set colorscheme to use
-  colorscheme = "astrodark",
+  colorscheme = "carbonfox",
+  -- colorscheme = "tokyonight-night",
+  -- colorscheme = "oxocarbon",
+
+  emoji  = true,
+
+  transparent = true,
 
   -- Diagnostics configuration (for vim.diagnostics.config({...})) when diagnostics are on
   diagnostics = {
