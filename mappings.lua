@@ -33,5 +33,9 @@ return {
     -- ["<esc>"] = false,
   },
 
-  v = {}
+  v = {
+    -- Identation like a VSCode
+    ["<"] = { "<gv", desc = "Indent Left" },
+    [">"] = { ">gv", desc = "Indent Right" },
+  }
 }
